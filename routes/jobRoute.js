@@ -11,7 +11,7 @@ const jobRouter = express.Router();
 jobRouter.get("/list", viewJobs);
 jobRouter.post(`/add`, addJob);
 jobRouter.put(`/edit/:id`, editJob);
-jobRouter.delete(`/delete`, deleteJob);
+jobRouter.delete(`/delete/:id`, deleteJob);
 
 
 export default jobRouter;
